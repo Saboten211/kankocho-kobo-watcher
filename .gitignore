@@ -1,0 +1,6 @@
+run.log
+__pycache__/
+*.pyc
+_raw_*.html
+_d*.html
+.DS_Store

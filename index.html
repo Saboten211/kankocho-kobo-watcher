@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>観光庁 公募ウォッチャー</title>
+<style>
+  :root{
+    --teal:#00738A; --teal-l:#3AABD2; --navy:#17406D;
+    --pink:#E71C57; --ink:#1a1a1a; --sub:#575757; --line:#e3e3e3; --bg:#f7f8f9;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Meiryo",sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6}
+  header{background:#fff;border-bottom:3px solid var(--teal);padding:20px 24px}
+  header h1{margin:0;font-size:20px;color:var(--teal)}
+  header .meta{margin-top:4px;font-size:12px;color:var(--sub)}
+  .wrap{max-width:1040px;margin:0 auto;padding:20px 24px 60px}
+  .stats{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 18px}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:8px;
+    padding:10px 16px;min-width:96px}
+  .stat b{display:block;font-size:22px;color:var(--teal)}
+  .stat span{font-size:12px;color:var(--sub)}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+    background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;margin-bottom:16px}
+  .controls input,.controls select{font-size:14px;padding:7px 10px;
+    border:1px solid var(--line);border-radius:6px}
+  .controls input{flex:1;min-width:200px}
+  .pill{display:inline-block;font-size:11px;font-weight:bold;border-radius:999px;
+    padding:2px 9px;color:#fff;white-space:nowrap}
+  .p-open{background:var(--teal)}
+  .p-end{background:#9aa0a6}
+  .p-result{background:var(--navy)}
+  .p-new{background:var(--pink)}
+  .p-chg{background:#b8860b}
+  .p-due-urgent{background:var(--pink)}
+  .p-due-warn{background:#c47f00}
+  .p-due-ok{background:#5a8f3c}
+  .p-due-over{background:#9aa0a6}
+  ul.list{list-style:none;margin:0;padding:0}
+  li.card{background:#fff;border:1px solid var(--line);border-radius:8px;
+    padding:14px 16px;margin-bottom:10px}
+  li.card .top{display:flex;gap:8px;align-items:center;flex-wrap:wrap;
+    font-size:12px;color:var(--sub)}
+  li.card a.title{display:block;margin:6px 0;font-size:15px;font-weight:bold;
+    color:var(--navy);text-decoration:none}
+  li.card a.title:hover{text-decoration:underline}
+  li.card .dl{font-size:13px;color:var(--ink);background:#fff7e6;
+    border:1px solid #f0d9a8;border-radius:6px;padding:5px 9px;margin:4px 0}
+  li.card .cats{margin-top:6px}
+  li.card .cat{display:inline-block;font-size:11px;color:var(--sub);
+    border:1px solid var(--line);border-radius:4px;padding:1px 7px;margin:0 4px 4px 0}
+  .empty{color:var(--sub);text-align:center;padding:40px}
+  footer{font-size:11px;color:var(--sub);text-align:center;padding:20px}
+  footer a{color:var(--teal)}
+</style>
+</head>
+<body>
+<header>
+  <h1>観光庁 公募ウォッチャー</h1>
+  <div class="meta" id="meta"></div>
+</header>
+<div class="wrap">
+  <div class="stats" id="stats"></div>
+  <div class="controls">
+    <input id="q" type="search" placeholder="事業名で絞り込み">
+    <select id="status">
+      <option value="">ステータス：すべて</option>
+      <option value="open">募集中のみ</option>
+      <option value="募集終了">募集終了</option>
+      <option value="採択結果">採択結果</option>
+    </select>
+    <select id="cat"><option value="">カテゴリ：すべて</option></select>
+    <select id="sort">
+      <option value="date">並び：公開日が新しい順</option>
+      <option value="deadline">並び：締切が近い順</option>
+    </select>
+    <label style="font-size:13px;color:var(--sub)">
+      <input type="checkbox" id="newonly"> 新着のみ</label>
+  </div>
+  <ul class="list" id="list"></ul>
+  <div class="empty" id="empty" style="display:none">該当する公募はありません</div>
+</div>
+<footer>
+  出典：観光庁 公募情報 ／ このページは自動生成（手動の最終確認は各詳細ページで）<br>
+  <span id="src"></span>
+</footer>
+<script>
+const PAYLOAD = {"generated_at": "2026-05-15T20:44:15", "source": {"hub": "https://www.mlit.go.jp/kankocho/kobo.html", "year_list": "https://www.mlit.go.jp/kankocho/kobo_2026_00003.html", "boshu": "https://www.mlit.go.jp/kankocho/kobo_boshu.html"}, "counts": {"total": 48, "open": 12, "new": 4, "due_soon": 2, "status_changed": 0}, "records": [{"url": "https://www.mlit.go.jp/kankocho/kobo05_00104.html", "title": "「観光需要分散のための地域観光資源のコンテンツ化促進事業」の二次公募に向けた事業説明会を実施します", "status": "募集中", "date_raw": "2026年5月15日", "date": "2026-05-15", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": true, "deadline_text": "【公募期間】: 令和８年５月29日（金）13:00～６月18日（木）12:00 ※締切厳守", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": true, "deadline_date": "2026-06-18", "days_left": 34}, {"url": "https://www.mlit.go.jp/kankocho/kobo04_00058.html", "title": "「万博レガシー事業」の公募を開始します。", "status": "募集中", "date_raw": "2026年5月13日", "date": "2026-05-13", "categories": ["その他観光関係者", "一般の方", "自治体・DMO"], "open": true, "deadline_text": "公募期間: 令和８年５月13日（水）～令和８年６月３日（水）　 17時締切（必着）", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": true, "deadline_date": "2026-06-03", "days_left": 19}, {"url": "https://www.mlit.go.jp/kankocho/kobo09_00047.html", "title": "令和８年度「コンベンションビューロー等のMICE誘致体制強化事業」の公募を開始します", "status": "募集中", "date_raw": "2026年5月12日", "date": "2026-05-12", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO"], "open": true, "deadline_text": "公募期間: 令和8年5月12日（火）～令和8年6月30日（火）　15:00必着", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": true, "deadline_date": "2026-06-30", "days_left": 46}, {"url": "https://www.mlit.go.jp/kankocho/kobo09_00045.html", "title": "令和８年度「MICE施設の受入環境整備事業」の公募を開始します", "status": "募集中", "date_raw": "2026年5月11日", "date": "2026-05-11", "categories": ["その他観光関係者", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": true, "deadline_text": "公募期間: 令和８年５月11日（月）～令和８年６月30日（火）　15：00必着", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": true, "deadline_date": "2026-06-30", "days_left": 46}, {"url": "https://www.mlit.go.jp/kankocho/kobo09_00044.html", "title": "令和8年度「地域のＭＩＣＥ誘致力強化促進事業」採択結果のお知らせ", "status": "採択結果", "date_raw": "2026年5月1日", "date": "2026-05-01", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo04_00055.html", "title": "「DMO総合支援事業（DMO体制整備・機能強化事業）」の公募を開始します。", "status": "募集中", "date_raw": "2026年4月30日", "date": "2026-04-30", "categories": ["自治体・DMO"], "open": true, "deadline_text": "公募期間: 令和８年４月30日（木）～令和８年５月25日（月）　 17時締切（必着）", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-05-25", "days_left": 10}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00100.html", "title": "令和８年度「地域観光資源の多言語解説整備促進事業」採択結果のお知らせ", "status": "採択結果", "date_raw": "2026年4月28日", "date": "2026-04-28", "categories": ["その他観光関係者", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00053.html", "title": "令和７年度補正予算「地域一体となった観光産業の効率化支援事業」の事業者公募開始のお知らせ", "status": "募集中", "date_raw": "2026年4月24日", "date": "2026-04-24", "categories": ["交通", "宿泊業", "自治体・DMO", "観光施設"], "open": true, "deadline_text": "公募期間: 令和8年4月24日(金)～令和8年6月10日(水)12:00【締切厳守】", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-06-10", "days_left": 26}, {"url": "https://www.mlit.go.jp/kankocho/kobo04_00054.html", "title": "「国際競争力の高いスノーリゾート形成促進事業」に係る事務局を決定しました", "status": "採択結果", "date_raw": "2026年4月24日", "date": "2026-04-24", "categories": ["その他観光関係者"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo08_00060.html", "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」に係る事務局を決定しました", "status": "採択結果", "date_raw": "2026年4月22日", "date": "2026-04-22", "categories": ["その他観光関係者"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00052.html", "title": "令和８年度「地方空港を活用した相互交流の促進事業」に係る事務局の公募を開始します", "status": "募集終了", "date_raw": "2026年4月21日", "date": "2026-04-21", "categories": ["その他観光関係者", "交通", "旅行業", "自治体・DMO"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00047.html", "title": "令和８年度「全国の観光地・観光産業における観光DX推進事業」の公募開始のお知らせ", "status": "募集中", "date_raw": "2026年4月17日", "date": "2026-04-17", "categories": ["その他観光関係者", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": true, "deadline_text": "公募期間: 公募受付：令和８年４月24日(金)～令和８年５月29日(金)17:00", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-05-29", "days_left": 14}, {"url": "https://www.mlit.go.jp/kankocho/kobo08_00059.html", "title": "「多様な食習慣や文化的慣習を持つ訪日外国人旅行者の受入環境整備に向けたモデル事業」の公募を開始します！", "status": "募集中", "date_raw": "2026年4月14日", "date": "2026-04-14", "categories": ["その他観光関係者", "自治体・DMO"], "open": true, "deadline_text": "公募期間: 令和８年４月14日（火）～令和８年６月８日（月）12：00必着", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-06-08", "days_left": 24}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00049.html", "title": "令和８年度「廃屋撤去・再生による地方温泉地等のまちづくり支援事業」に係る事務局を決定しました", "status": "採択結果", "date_raw": "2026年4月9日", "date": "2026-04-09", "categories": ["宿泊業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/topics04_00083.html", "title": "令和８年度「DMO総合支援事業」及び「万博レガシー事業」に係る事務局を決定しました", "status": "採択結果", "date_raw": "2026年4月8日", "date": "2026-04-08", "categories": ["自治体・DMO"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00091.html", "title": "令和８年度「観光コンテンツの持続的供給に資する質的価値の維持向上事業」の公募を開始します", "status": "募集終了", "date_raw": "2026年4月7日", "date": "2026-04-07", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo08_00057.html", "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」の公募開始、公募説明会の開催", "status": "募集中", "date_raw": "2026年4月1日", "date": "2026-04-01", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": true, "deadline_text": "１　公募期間: 公募開始：令和８年２月25日（水）", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00048.html", "title": "令和7年補正予算「観光地・観光産業におけるユニバーサルツーリズム促進事業」の事業者公募開始のお知らせ", "status": "募集中", "date_raw": "2026年4月1日", "date": "2026-04-01", "categories": ["宿泊業", "観光施設"], "open": true, "deadline_text": "公募期間: 公募受付：令和8年3月31日（火）～令和8年5月15日（金）17:00締切", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-05-15", "days_left": 0}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00094.html", "title": "「地方部における観光コンテンツとローカルガイド人材の一体的な質的向上事業」（調査事業）の地域公募開始のお知らせ", "status": "募集終了", "date_raw": "2026年3月30日", "date": "2026-03-30", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo04_00047.html", "title": "「国際競争力の高いスノーリゾート形成促進事業」に係る地域公募開始のお知らせ", "status": "募集終了", "date_raw": "2026年3月26日", "date": "2026-03-26", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00093.html", "title": "令和８年度デジタルノマド誘客に向けた補助事業の公募を開始します", "status": "募集終了", "date_raw": "2026年3月25日", "date": "2026-03-25", "categories": ["その他観光関係者", "一般の方", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo08_00058.html", "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」に係る事務局の公募等を開始します", "status": "募集終了", "date_raw": "2026年3月23日", "date": "2026-03-23", "categories": ["その他観光関係者", "一般の方", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00046.html", "title": "【令和7年度補正予算】観光地経営の高度化事業（人材育成補助金）に係る公募資料及び申請受付期間のお知らせ", "status": "募集中", "date_raw": "2026年3月23日", "date": "2026-03-23", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": true, "deadline_text": "公募期間: 令和8年4月1日（水）～ 令和8年5月15日（金） 17：00（必着）", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-05-15", "days_left": 0}, {"url": "https://www.mlit.go.jp/kankocho/kobo04_00046.html", "title": "「国際競争力の高いスノーリゾート形成促進事業」 に係る事務局公募のお知らせ", "status": "募集終了", "date_raw": "2026年3月23日", "date": "2026-03-23", "categories": ["その他観光関係者"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00087.html", "title": "令和８年度デジタルノマド誘客に向けたモデル実証事業の公募を開始します", "status": "募集終了", "date_raw": "2026年3月13日", "date": "2026-03-13", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/page04_000258_00003.html", "title": "令和８年度「ブルーツーリズム推進支援事業」の公募を開始します", "status": "募集終了", "date_raw": "2026年3月13日", "date": "2026-03-13", "categories": ["その他観光関係者", "自治体・DMO"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo09_00042.html", "title": "令和8年度「地域のＭＩＣＥ誘致力強化促進事業」の公募開始のお知らせ", "status": "募集終了", "date_raw": "2026年3月13日", "date": "2026-03-13", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00089.html", "title": "「観光振興事業費補助金（地域資源を活用した観光まちづくり推進事業）」に係る事務局の公募について", "status": "募集終了", "date_raw": "2026年3月12日", "date": "2026-03-12", "categories": [], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00090.html", "title": "「地域の観光資源充実のための環境整備推進事業（地域資源を活用した観光まちづくり推進事業（補助））」の公募開始のお知らせ", "status": "募集終了", "date_raw": "2026年3月12日", "date": "2026-03-12", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00042.html", "title": "【令和7年度補正予算】観光地・観光産業における省力化投資補助事業に係るの申請受付期間のお知らせ", "status": "募集中", "date_raw": "2026年3月10日", "date": "2026-03-10", "categories": ["宿泊業"], "open": true, "deadline_text": "公募期間: 公募受付：令和８年３月2７日（金）１３：００～ 令和８年５月２９日（金） １７：００締切", "_dl_ver": 3, "first_seen": "2026-05-15", "is_new": false, "deadline_date": "2026-05-29", "days_left": 14}, {"url": "https://www.mlit.go.jp/kankocho/kobo07_00009.html", "title": "「UN Tourism Best Tourism Villages（ベスト・ツーリズム・ビレッジ） 2026」を募集します！", "status": "募集終了", "date_raw": "2026年3月10日", "date": "2026-03-10", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00088.html", "title": "「地域の観光資源充実のための環境整備推進事業（地域資源の観光活用に係る調査）」の公募開始のお知らせ", "status": "募集終了", "date_raw": "2026年3月9日", "date": "2026-03-09", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00044.html", "title": "令和７年度補正予算「観光地・観光産業におけるユニバーサルツーリズム促進事業」に係る事務局を決定しました", "status": "採択結果", "date_raw": "2026年3月5日", "date": "2026-03-05", "categories": ["その他観光関係者", "宿泊業", "旅行業", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00036.html", "title": "令和８年度「第２のふるさとづくりプロジェクト」モデル実証事業の公募を開始します", "status": "募集終了", "date_raw": "2026年3月3日", "date": "2026-03-03", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo12_00024.html", "title": "令和８年度「能登半島地震からの復興に向けた観光再生支援事業」の公募を開始します", "status": "募集終了", "date_raw": "2026年3月2日", "date": "2026-03-02", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00086.html", "title": "「観光需要分散のための地域観光資源のコンテンツ化促進事業」の公募開始のお知らせ", "status": "募集終了", "date_raw": "2026年2月27日", "date": "2026-02-27", "categories": ["その他観光関係者", "交通", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00040.html", "title": "令和８年度「廃屋撤去・再生による地方温泉地等のまちづくり支援事業」に係る事務局公募について", "status": "募集終了", "date_raw": "2026年2月25日", "date": "2026-02-25", "categories": [], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00045.html", "title": "令和７年度補正予算「地域一体となった観光産業の効率化支援事業」に係る事務局公募結果について", "status": "採択結果", "date_raw": "2026年2月25日", "date": "2026-02-25", "categories": ["その他観光関係者", "宿泊業", "旅行業"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00083.html", "title": "令和８年度「地域観光資源の多言語解説整備促進事業」の公募を開始します", "status": "募集終了", "date_raw": "2026年2月24日", "date": "2026-02-24", "categories": ["その他観光関係者", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00043.html", "title": "【令和7年度補正予算】全国の観光地・観光産業における観光DX推進事業に係る事務局が決定しました", "status": "採択結果", "date_raw": "2026年2月24日", "date": "2026-02-24", "categories": ["その他観光関係者"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo04_00048.html", "title": "令和８年度「DMO総合支援事業」及び「万博レガシー事業」に係る事務局の公募を開始します", "status": "募集終了", "date_raw": "2026年2月20日", "date": "2026-02-20", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/topics06_00042.html", "title": "ユニバーサルツーリズム「すべての人が安心して楽しめる旅づくり」オンラインセミナーを開催します！", "status": "募集終了", "date_raw": "2026年2月19日", "date": "2026-02-19", "categories": ["一般の方", "宿泊業", "旅行業"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00038.html", "title": "【令和７年度補正予算】地域全体の消費拡大、誘客・再来訪促進に向けた観光DX推進モデル実証事業", "status": "募集終了", "date_raw": "2026年2月12日", "date": "2026-02-12", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00037.html", "title": "【令和7年度補正予算】観光地・観光産業における省力化投資補助事業に係る事務局が決定しました", "status": "採択結果", "date_raw": "2026年1月29日", "date": "2026-01-29", "categories": ["宿泊業"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00034.html", "title": "令和７年度補正予算「地域一体となった観光産業の効率化支援事業」に係る事務局公募について", "status": "募集終了", "date_raw": "2026年1月16日", "date": "2026-01-16", "categories": ["その他観光関係者", "宿泊業", "旅行業"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo06_00036.html", "title": "【令和７年度補正予算】「全国の観光地・観光産業における観光DX推進事業」に係る事務局の公募を開始します", "status": "募集終了", "date_raw": "2026年1月16日", "date": "2026-01-16", "categories": ["その他観光関係者"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo/kobo06_00035.html", "title": "令和７年度補正予算「観光地・観光産業におけるユニバーサルツーリズム促進事業」に係る事務局の公募を開始します", "status": "募集終了", "date_raw": "2026年1月15日", "date": "2026-01-15", "categories": ["その他観光関係者", "宿泊業", "旅行業", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}, {"url": "https://www.mlit.go.jp/kankocho/kobo05_00082.html", "title": "「観光需要分散のための地域観光資源のコンテンツ化促進事業」に係る事務局を決定しました", "status": "採択結果", "date_raw": "2026年1月15日", "date": "2026-01-15", "categories": ["その他観光関係者", "交通", "宿泊業", "旅行業", "自治体・DMO", "観光施設"], "open": false, "deadline_text": null, "_dl_ver": null, "first_seen": "2026-05-15", "is_new": false, "deadline_date": null, "days_left": null}]};
+const R = PAYLOAD.records;
+const $ = s => document.querySelector(s);
+
+document.getElementById('meta').textContent =
+  '最終更新: ' + PAYLOAD.generated_at.replace('T',' ');
+const c = PAYLOAD.counts;
+document.getElementById('stats').innerHTML = [
+  ['全公募', c.total], ['募集中', c.open], ['締切間近(7日内)', c.due_soon ?? 0],
+  ['新着(公開7日内)', c.new], ['状態変化', c.status_changed]
+].map(([k,v])=>`<div class="stat"><b>${v}</b><span>${k}</span></div>`).join('');
+document.getElementById('src').innerHTML =
+  ['hub','year_list','boshu'].map(k=>`<a href="${PAYLOAD.source[k]}" target="_blank" rel="noopener">${k}</a>`).join(' / ');
+
+const cats = [...new Set(R.flatMap(r=>r.categories||[]))].sort();
+const catSel = document.getElementById('cat');
+cats.forEach(x=>{const o=document.createElement('option');o.value=x;o.textContent='カテゴリ：'+x;catSel.appendChild(o)});
+
+function statusPill(r){
+  if(r.open) return '<span class="pill p-open">募集中</span>';
+  if(r.status.indexOf('採択')>=0) return '<span class="pill p-result">採択結果</span>';
+  return '<span class="pill p-end">'+(r.status||'募集終了')+'</span>';
+}
+function esc(s){return (s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
+function dueChip(r){
+  if(!r.deadline_date) return '';
+  const md=r.deadline_date.slice(5).replace('-','/').replace(/^0/,'');
+  const d=r.days_left;
+  let cls='p-due-ok', label='あと'+d+'日';
+  if(d<0){cls='p-due-over';label='締切終了';}
+  else if(d===0){cls='p-due-urgent';label='本日締切';}
+  else if(d<=7){cls='p-due-urgent';}
+  else if(d<=21){cls='p-due-warn';}
+  return `<span class="pill ${cls}">締切 ${md}・${label}</span>`;
+}
+
+function render(){
+  const q=$('#q').value.trim();
+  const st=$('#status').value, ct=$('#cat').value, no=$('#newonly').checked;
+  const sort=$('#sort').value;
+  let rows=R.filter(r=>{
+    if(q && r.title.indexOf(q)<0) return false;
+    if(st==='open' && !r.open) return false;
+    if(st && st!=='open' && (r.status||'').indexOf(st)<0) return false;
+    if(ct && !(r.categories||[]).includes(ct)) return false;
+    if(no && !r.is_new) return false;
+    return true;
+  });
+  if(sort==='deadline'){
+    rows=rows.slice().sort((a,b)=>{
+      const ka=a.deadline_date||'9999-12-31', kb=b.deadline_date||'9999-12-31';
+      return ka<kb?-1:ka>kb?1:0;
+    });
+  }
+  const list=$('#list');
+  list.innerHTML=rows.map(r=>`
+    <li class="card">
+      <div class="top">
+        ${statusPill(r)}
+        ${dueChip(r)}
+        ${r.is_new?'<span class="pill p-new">NEW</span>':''}
+        ${r.status_changed?`<span class="pill p-chg">${esc(r.status_changed.from)}→${esc(r.status_changed.to)}</span>`:''}
+        <span>公開日 ${esc(r.date_raw||r.date||'-')}</span>
+      </div>
+      <a class="title" href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>
+      ${r.deadline_text?`<div class="dl">⏰ ${esc(r.deadline_text)}</div>`:''}
+      <div class="cats">${(r.categories||[]).map(x=>`<span class="cat">${esc(x)}</span>`).join('')}</div>
+    </li>`).join('');
+  $('#empty').style.display = rows.length? 'none':'block';
+}
+['q','status','cat','sort','newonly'].forEach(id=>{
+  const el=document.getElementById(id);
+  el.addEventListener(id==='q'?'input':'change',render);
+});
+render();
+</script>
+</body>
+</html>
