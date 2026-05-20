@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T23:04:53",
+  "generated_at": "2026-05-20T23:15:41",
   "source": {
     "hub": "https://www.mlit.go.jp/kankocho/kobo.html",
     "year_list": "https://www.mlit.go.jp/kankocho/kobo_2026_00003.html",
@@ -17,8 +17,8 @@
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00057.html",
       "title": "令和８年度実施「ユニバーサルツーリズムに資するデザイン開発等実証事業」公募説明会の開催および公募について",
       "status": "募集中",
-      "date_raw": "2026年5月19日",
-      "date": "2026-05-19",
+      "date_raw": "2026年5月20日",
+      "date": "2026-05-20",
       "categories": [
         "その他観光関係者",
         "一般の方",
@@ -34,7 +34,29 @@
       "first_seen": "2026-05-19",
       "is_new": true,
       "deadline_date": "2026-06-19",
-      "days_left": 31
+      "days_left": 30
+    },
+    {
+      "url": "https://www.mlit.go.jp/kankocho/kobo08_00057.html",
+      "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」の計画申請受付開始日のお知らせ",
+      "status": "募集中",
+      "date_raw": "2026年5月20日",
+      "date": "2026-05-20",
+      "categories": [
+        "その他観光関係者",
+        "交通",
+        "宿泊業",
+        "旅行業",
+        "自治体・DMO",
+        "観光施設"
+      ],
+      "open": true,
+      "deadline_text": "１　公募期間: 公募開始：令和８年２月25日（水）",
+      "_dl_ver": 3,
+      "first_seen": "2026-05-15",
+      "is_new": true,
+      "deadline_date": null,
+      "days_left": null
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00056.html",
@@ -75,7 +97,7 @@
       "first_seen": "2026-05-15",
       "is_new": true,
       "deadline_date": "2026-06-18",
-      "days_left": 30
+      "days_left": 29
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00058.html",
@@ -94,7 +116,7 @@
       "first_seen": "2026-05-15",
       "is_new": true,
       "deadline_date": "2026-06-03",
-      "days_left": 15
+      "days_left": 14
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00047.html",
@@ -113,9 +135,9 @@
       "deadline_text": "公募期間: 令和8年5月12日（火）～令和8年6月30日（火）　15:00必着",
       "_dl_ver": 3,
       "first_seen": "2026-05-15",
-      "is_new": true,
+      "is_new": false,
       "deadline_date": "2026-06-30",
-      "days_left": 42
+      "days_left": 41
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00045.html",
@@ -136,7 +158,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-30",
-      "days_left": 42
+      "days_left": 41
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00044.html",
@@ -175,7 +197,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-25",
-      "days_left": 6
+      "days_left": 5
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00100.html",
@@ -214,7 +236,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-10",
-      "days_left": 22
+      "days_left": 21
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00054.html",
@@ -289,7 +311,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-29",
-      "days_left": 10
+      "days_left": 9
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo08_00059.html",
@@ -307,7 +329,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-08",
-      "days_left": 20
+      "days_left": 19
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00049.html",
@@ -368,28 +390,6 @@
       "days_left": null
     },
     {
-      "url": "https://www.mlit.go.jp/kankocho/kobo08_00057.html",
-      "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」の公募開始、公募説明会の開催",
-      "status": "募集中",
-      "date_raw": "2026年4月1日",
-      "date": "2026-04-01",
-      "categories": [
-        "その他観光関係者",
-        "交通",
-        "宿泊業",
-        "旅行業",
-        "自治体・DMO",
-        "観光施設"
-      ],
-      "open": true,
-      "deadline_text": "１　公募期間: 公募開始：令和８年２月25日（水）",
-      "_dl_ver": 3,
-      "first_seen": "2026-05-15",
-      "is_new": false,
-      "deadline_date": null,
-      "days_left": null
-    },
-    {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00048.html",
       "title": "令和7年補正予算「観光地・観光産業におけるユニバーサルツーリズム促進事業」の事業者公募開始のお知らせ",
       "status": "募集終了",
@@ -405,7 +405,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-15",
-      "days_left": -4
+      "days_left": -5
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00094.html",
@@ -517,7 +517,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-15",
-      "days_left": -4
+      "days_left": -5
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00046.html",
@@ -650,7 +650,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-29",
-      "days_left": 10
+      "days_left": 9
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo07_00009.html",
