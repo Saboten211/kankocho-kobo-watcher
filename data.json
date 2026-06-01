@@ -1,18 +1,62 @@
 {
-  "generated_at": "2026-05-31T23:02:03",
+  "generated_at": "2026-06-01T23:37:25",
   "source": {
     "hub": "https://www.mlit.go.jp/kankocho/kobo.html",
     "year_list": "https://www.mlit.go.jp/kankocho/kobo_2026_00003.html",
     "boshu": "https://www.mlit.go.jp/kankocho/kobo_boshu.html"
   },
   "counts": {
-    "total": 58,
-    "open": 14,
-    "new": 8,
-    "due_soon": 1,
-    "status_changed": 0
+    "total": 59,
+    "open": 13,
+    "new": 10,
+    "due_soon": 2,
+    "status_changed": 2
   },
   "records": [
+    {
+      "url": "https://www.mlit.go.jp/kankocho/kobo08_00057.html",
+      "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」二次公募開始及び公募説明会の開催",
+      "status": "募集中",
+      "date_raw": "2026年6月1日",
+      "date": "2026-06-01",
+      "categories": [
+        "その他観光関係者",
+        "交通",
+        "宿泊業",
+        "旅行業",
+        "自治体・DMO",
+        "観光施設"
+      ],
+      "open": true,
+      "deadline_text": "１　公募期間: 公募開始：令和８年２月25日（水）",
+      "_dl_ver": 3,
+      "first_seen": "2026-05-15",
+      "is_new": true,
+      "deadline_date": null,
+      "days_left": null
+    },
+    {
+      "url": "https://www.mlit.go.jp/kankocho/kobo06_00060.html",
+      "title": "【令和7年度補正予算】観光地経営の高度化事業（人材育成補助金）の二次公募を開始します",
+      "status": "募集中",
+      "date_raw": "2026年6月1日",
+      "date": "2026-06-01",
+      "categories": [
+        "その他観光関係者",
+        "交通",
+        "宿泊業",
+        "旅行業",
+        "自治体・DMO",
+        "観光施設"
+      ],
+      "open": true,
+      "deadline_text": "公募期間: 令和8年6月1日（月）～ 令和8年6月30日（火） 17：00（必着）",
+      "_dl_ver": 3,
+      "first_seen": "2026-06-01",
+      "is_new": true,
+      "deadline_date": "2026-06-30",
+      "days_left": 29
+    },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo08_00061.html",
       "title": "令和８年度「観光客によるマナー違反・問題行為の抑制・未然防止に向けた啓発に関する実証事業」の公募を開始します",
@@ -32,7 +76,7 @@
       "first_seen": "2026-05-29",
       "is_new": true,
       "deadline_date": "2026-06-22",
-      "days_left": 22
+      "days_left": 21
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00059.html",
@@ -122,7 +166,7 @@
       "first_seen": "2026-05-29",
       "is_new": true,
       "deadline_date": "2026-06-18",
-      "days_left": 18
+      "days_left": 17
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00106.html",
@@ -166,7 +210,7 @@
       "first_seen": "2026-05-27",
       "is_new": true,
       "deadline_date": "2026-07-31",
-      "days_left": 61
+      "days_left": 60
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00058.html",
@@ -189,29 +233,7 @@
       "first_seen": "2026-05-26",
       "is_new": true,
       "deadline_date": "2026-06-19",
-      "days_left": 19
-    },
-    {
-      "url": "https://www.mlit.go.jp/kankocho/kobo08_00057.html",
-      "title": "令和８年度「オーバーツーリズムの未然防止・抑制をはじめとする観光地の面的受入環境整備促進事業」申請受付開始及び特設ウェブサイト開設のご案内",
-      "status": "募集中",
-      "date_raw": "2026年5月22日",
-      "date": "2026-05-22",
-      "categories": [
-        "その他観光関係者",
-        "交通",
-        "宿泊業",
-        "旅行業",
-        "自治体・DMO",
-        "観光施設"
-      ],
-      "open": true,
-      "deadline_text": "１　公募期間: 公募開始：令和８年２月25日（水）",
-      "_dl_ver": 3,
-      "first_seen": "2026-05-15",
-      "is_new": false,
-      "deadline_date": null,
-      "days_left": null
+      "days_left": 18
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00057.html",
@@ -234,7 +256,7 @@
       "first_seen": "2026-05-19",
       "is_new": false,
       "deadline_date": "2026-06-19",
-      "days_left": 19
+      "days_left": 18
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00056.html",
@@ -275,7 +297,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-18",
-      "days_left": 18
+      "days_left": 17
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00058.html",
@@ -294,7 +316,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-03",
-      "days_left": 3
+      "days_left": 2
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00047.html",
@@ -315,7 +337,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-30",
-      "days_left": 30
+      "days_left": 29
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00045.html",
@@ -336,7 +358,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-30",
-      "days_left": 30
+      "days_left": 29
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00044.html",
@@ -375,7 +397,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-25",
-      "days_left": -6
+      "days_left": -7
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00100.html",
@@ -414,7 +436,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-10",
-      "days_left": 10
+      "days_left": 9
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00054.html",
@@ -473,7 +495,7 @@
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00047.html",
       "title": "令和８年度「全国の観光地・観光産業における観光DX推進事業」の公募開始のお知らせ",
-      "status": "募集中",
+      "status": "募集終了",
       "date_raw": "2026年4月17日",
       "date": "2026-04-17",
       "categories": [
@@ -483,13 +505,17 @@
         "自治体・DMO",
         "観光施設"
       ],
-      "open": true,
+      "open": false,
       "deadline_text": "公募期間: 公募受付：令和８年４月24日(金)～令和８年５月29日(金)17:00",
       "_dl_ver": 3,
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-29",
-      "days_left": -2
+      "days_left": -3,
+      "status_changed": {
+        "from": "募集中",
+        "to": "募集終了"
+      }
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo08_00059.html",
@@ -507,7 +533,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-08",
-      "days_left": 8
+      "days_left": 7
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00049.html",
@@ -583,7 +609,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-15",
-      "days_left": -16
+      "days_left": -17
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00094.html",
@@ -695,7 +721,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-15",
-      "days_left": -16
+      "days_left": -17
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00046.html",
@@ -816,19 +842,23 @@
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00042.html",
       "title": "【令和7年度補正予算】観光地・観光産業における省力化投資補助事業に係るの申請受付期間のお知らせ",
-      "status": "募集中",
+      "status": "募集終了",
       "date_raw": "2026年3月10日",
       "date": "2026-03-10",
       "categories": [
         "宿泊業"
       ],
-      "open": true,
+      "open": false,
       "deadline_text": "公募期間: 公募受付：令和８年３月2７日（金）１３：００～ 令和８年５月２９日（金） １７：００締切",
       "_dl_ver": 3,
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-29",
-      "days_left": -2
+      "days_left": -3,
+      "status_changed": {
+        "from": "募集中",
+        "to": "募集終了"
+      }
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo07_00009.html",
