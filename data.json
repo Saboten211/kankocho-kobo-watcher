@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-02T23:47:51",
+  "generated_at": "2026-06-03T23:46:14",
   "source": {
     "hub": "https://www.mlit.go.jp/kankocho/kobo.html",
     "year_list": "https://www.mlit.go.jp/kankocho/kobo_2026_00003.html",
     "boshu": "https://www.mlit.go.jp/kankocho/kobo_boshu.html"
   },
   "counts": {
-    "total": 61,
+    "total": 60,
     "open": 14,
-    "new": 12,
-    "due_soon": 2,
+    "new": 10,
+    "due_soon": 3,
     "status_changed": 0
   },
   "records": [
@@ -32,26 +32,7 @@
       "first_seen": "2026-06-02",
       "is_new": true,
       "deadline_date": "2026-07-31",
-      "days_left": 59
-    },
-    {
-      "url": "https://www.mlit.go.jp/kankocho/kobo06_00028.html",
-      "title": "「観光地・観光産業におけるユニバーサルツーリズム促進事業」における採択結果のお知らせ",
-      "status": "採択結果",
-      "date_raw": "2026年6月2日",
-      "date": "2026-06-02",
-      "categories": [
-        "その他観光関係者",
-        "宿泊業",
-        "観光施設"
-      ],
-      "open": false,
-      "deadline_text": null,
-      "_dl_ver": null,
-      "first_seen": "2026-06-02",
-      "is_new": true,
-      "deadline_date": null,
-      "days_left": null
+      "days_left": 58
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo08_00057.html",
@@ -95,7 +76,7 @@
       "first_seen": "2026-06-01",
       "is_new": true,
       "deadline_date": "2026-06-30",
-      "days_left": 28
+      "days_left": 27
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo08_00061.html",
@@ -116,7 +97,7 @@
       "first_seen": "2026-05-29",
       "is_new": true,
       "deadline_date": "2026-06-22",
-      "days_left": 20
+      "days_left": 19
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00059.html",
@@ -206,7 +187,7 @@
       "first_seen": "2026-05-29",
       "is_new": true,
       "deadline_date": "2026-06-18",
-      "days_left": 16
+      "days_left": 15
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00106.html",
@@ -250,7 +231,7 @@
       "first_seen": "2026-05-27",
       "is_new": true,
       "deadline_date": "2026-07-31",
-      "days_left": 59
+      "days_left": 58
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00058.html",
@@ -271,9 +252,9 @@
       "deadline_text": "公募期間: 令和8年5月26日（火）～ 6月19日（金）17:00必着",
       "_dl_ver": 3,
       "first_seen": "2026-05-26",
-      "is_new": true,
+      "is_new": false,
       "deadline_date": "2026-06-19",
-      "days_left": 17
+      "days_left": 16
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00057.html",
@@ -296,7 +277,7 @@
       "first_seen": "2026-05-19",
       "is_new": false,
       "deadline_date": "2026-06-19",
-      "days_left": 17
+      "days_left": 16
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00056.html",
@@ -337,7 +318,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-18",
-      "days_left": 16
+      "days_left": 15
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00058.html",
@@ -356,7 +337,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-03",
-      "days_left": 1
+      "days_left": 0
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00047.html",
@@ -377,7 +358,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-30",
-      "days_left": 28
+      "days_left": 27
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00045.html",
@@ -398,7 +379,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-30",
-      "days_left": 28
+      "days_left": 27
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo09_00044.html",
@@ -437,7 +418,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-25",
-      "days_left": -8
+      "days_left": -9
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00100.html",
@@ -476,7 +457,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-10",
-      "days_left": 8
+      "days_left": 7
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00054.html",
@@ -551,7 +532,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-29",
-      "days_left": -4
+      "days_left": -5
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo08_00059.html",
@@ -569,7 +550,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-06-08",
-      "days_left": 6
+      "days_left": 5
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo06_00049.html",
@@ -645,7 +626,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-15",
-      "days_left": -18
+      "days_left": -19
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo05_00094.html",
@@ -757,7 +738,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-15",
-      "days_left": -18
+      "days_left": -19
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo04_00046.html",
@@ -890,7 +871,7 @@
       "first_seen": "2026-05-15",
       "is_new": false,
       "deadline_date": "2026-05-29",
-      "days_left": -4
+      "days_left": -5
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo07_00009.html",
