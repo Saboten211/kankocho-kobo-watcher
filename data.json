@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T01:03:11",
+  "generated_at": "2026-09-01T23:51:36",
   "source": {
     "hub": "https://www.mlit.go.jp/kankocho/kobo.html",
     "year_list": "https://www.mlit.go.jp/kankocho/kobo_2026_00003.html",
@@ -10,7 +10,7 @@
     "open": 5,
     "new": 3,
     "due_soon": 0,
-    "status_changed": 1
+    "status_changed": 0
   },
   "records": [
     {
@@ -141,11 +141,7 @@
       "first_seen": "2026-07-27",
       "is_new": false,
       "deadline_date": "2026-08-28",
-      "days_left": -4,
-      "status_changed": {
-        "from": "募集中",
-        "to": "募集終了"
-      }
+      "days_left": -4
     },
     {
       "url": "https://www.mlit.go.jp/kankocho/kobo13_00001.html",
